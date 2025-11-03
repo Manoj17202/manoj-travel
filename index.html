@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj travel | Explore the World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="brand">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <span class="brand-name">Manoj travel</span>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#book">Book</a></li>
+                <li class="dropdown">
+                    <a href="#">Packages ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">United States</a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">Germany</a></li>
+                    </ul>
+                </li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Register</button>
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to <span class="highlight">Manoj travel</span></h2>
+            <h1>Visit <span id="places"></span></h1>
+            <a href="#book"><button class="book-now">Book Now</button></a>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="book" class="booking">
+        <div class="booking-left">
+            <img src="assets/logo.png" alt="About Image">
+        </div>
+
+        <div class="booking-right">
+            <h2>Book Your Trip</h2>
+            <form id="bookingForm">
+                <label>Where to:</label>
+                <select id="destination" required>
+                    <option value="">Select Destination</option>
+                    <option>India</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>United States</option>
+                </select>
+
+                <label>How Many Persons:</label>
+                <input type="number" id="persons" min="1" required>
+
+                <label>Start Date:</label>
+                <input type="date" id="startDate" required>
+
+                <label>End Date:</label>
+                <input type="date" id="endDate" required>
+
+                <label>Description:</label>
+                <textarea id="description" minlength="50" maxlength="500" required></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- PACKAGES SECTION -->
+    <section id="packages" class="packages">
+        <h2>Our Popular Packages</h2>
+        <div class="package-grid">
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Paris, France</h3>
+                <p>The city of lights and love.</p>
+                <p>$1200 | ⭐⭐⭐⭐☆</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Goa, India</h3>
+                <p>Sun, sand, and sea paradise.</p>
+                <p>$700 | ⭐⭐⭐⭐☆</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>New York, USA</h3>
+                <p>The city that never sleeps.</p>
+                <p>$1500 | ⭐⭐⭐⭐⭐</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Berlin, Germany</h3>
+                <p>Historic sites and nightlife.</p>
+                <p>$1100 | ⭐⭐⭐⭐☆</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Mumbai, India</h3>
+                <p>Gateway to India's dynamic film world.</p>
+                <p>$950 | ⭐⭐⭐⭐☆</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Los Angeles, USA</h3>
+                <p>Hollywood glamour and coastal beauty.</p>
+                <p>$1600 | ⭐⭐⭐⭐⭐</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Munich, Germany</h3>
+                <p>Bavarian charm and Alpine views.</p>
+                <p>$1050 | ⭐⭐⭐⭐☆</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Nice, France</h3>
+                <p>French Riviera luxury and seaside.</p>
+                <p>$1350 | ⭐⭐⭐⭐⭐</p><button>Book Now</button>
+            </div>
+
+            <div class="card"><img src="assets/pkg.jpg">
+                <h3>Chicago, USA</h3>
+                <p>Architectural wonders and deep-dish pizza.</p>
+                <p>$1300 | ⭐⭐⭐⭐☆</p><button>Book Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Affordable Hotels</h3>
+                <p>Stay at the best prices.</p>
+            </div>
+            <div class="service-card">
+                <h3>Food & Drinks</h3>
+                <p>Enjoy delicious local cuisines.</p>
+            </div>
+            <div class="service-card">
+                <h3>Safety Guide</h3>
+                <p>Travel safely with expert guidance.</p>
+            </div>
+            <div class="service-card">
+                <h3>24x7 Support</h3>
+                <p>Always there to help you.</p>
+            </div>
+            <div class="service-card">
+                <h3>Travel Insurance</h3>
+                <p>Secure your journey with insurance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Packages</h3>
+                <p>Tailor-made trips to suit your needs.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="assets/11.jfif" alt="Gallery Image 1">
+                <p>City of Love</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/12.jfif" alt="Gallery Image 2">
+                <p>Beautiful beach at Goa</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/13.jfif" alt="Gallery Image 3">
+                <p>The City That Never Sleeps</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/14.jpg" alt="Gallery Image 4">
+                <p>Berlin city lights</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/15.jfif" alt="Gallery Image 5">
+                <p>Nice skyline</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/16.jfif" alt="Gallery Image 6">
+                <p>Capital of the Movement</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-left">
+            <img src="assets/logo.png" alt="Company Image">
+        </div>
+        <div class="about-right">
+            <h2>About Manoj travel</h2>
+            <p>Manoj travel was established in 2025 and has been offering unforgettable travel experiences worldwide.
+                Our mission is to provide affordable, safe, and customized trips for all types of travelers.</p>
+            <p>We have served thousands of satisfied customers and partnered with top hotels and airlines to ensure the
+                best quality service.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Manoj travel. All Rights Reserved.</p>
+        <div class="social-icons">
+            <span>Instagram</span> | <span>Facebook</span> | <span>Twitter</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
